@@ -1,3 +1,30 @@
 .App {
   text-align: center;
 }
+
+.active {
+  color: #00f;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0.4rem;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+table {
+  max-width: 500px;
+}
+
+.pageSelectButton {
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
