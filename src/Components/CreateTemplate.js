@@ -4,7 +4,7 @@ import { postData } from '../Services/api';
 export function CreateTemplate() {
   const initialState = {
     title: '',
-    items: [],
+    items: []
   };
   const [state, setState] = useState(initialState);
 
