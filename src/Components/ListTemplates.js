@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getData } from '../Services/api';
 import { PageSelect } from "./PageSelect";
 
-export function ListBoardgames() {
+export function ListTemplates() {
   const initialState = [];
   const [state, setState] = useState(initialState);
   const [error, setError] = useState(null);

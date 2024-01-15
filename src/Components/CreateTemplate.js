@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { postData } from '../Services/api';
 
-export function AddTemplate() {
+export function CreateTemplate() {
   const initialState = {
     title: '',
     items: [],
