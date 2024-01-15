@@ -9,15 +9,6 @@ export function ShowSingleSearchResult({ state }) {
           value={state.title}
           readOnly />
       </label>
-      <br />
-      <label>
-      Genstande:
-        <input
-          name="items"
-          type="text"
-          value={state.items}
-          readOnly />
-      </label>
     </form>
     )
   }

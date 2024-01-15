@@ -3,24 +3,24 @@ import { getData } from '../Services/api';
 
 export function SearchTemplate({setSearchResult}) {
   const initialState = {
-    name: '',
+    title: '',
   };
   const [state, setState] = useState(initialState);
 
   function handleInputChange(event) {
-    const name = event.target.name;
+    const title = event.target.name;
 
     setState(state => {
       return {
         ...state,
-        [name]: event.target.value
+        [title]: event.target.value
       };
     });
   }
 
   async function searchName() {
     try {
-      const data = await getData(`templates?name_like=${state.name}`);
+      const data = await getData(`templates?title_like=${state.title}`);
       setSearchResult(data);
     }
     catch (error) {

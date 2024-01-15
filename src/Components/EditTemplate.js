@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { updateData } from '../Services/api';
+import { getData, updateData } from '../Services/api';
 import { SearchTemplate } from "./SearchTemplate";
 import { ShowSearchResults } from "./ShowSearchResults";
 
 export function EditTemplate() {
   const initialState = {
-    id: '',
-    title: '',
-    items: [],
     itemId: '',
     itemName: '',
     quantity: '',
@@ -18,9 +15,11 @@ export function EditTemplate() {
   const [newItemQuantity, setNewItemQuantity] = useState('');
 
 
-  async function sendUpdate(newState) {
+  async function sendUpdate(newItem) {
     try {
-      await updateData(`templates/${state.id}`, newState);
+    const template = await getData(`templates/${state.id}`);
+    template.items.push(newItem)
+    await updateData(`templates/${state.id}`, template);
     }
     catch (error) {
       alert(error.message);
@@ -39,13 +38,15 @@ export function EditTemplate() {
 
   function handleSubmitNewItem(event) {
     event.preventDefault();
-    const newState = {
-      ...state,
-      itemName: newItemName,
-      quantity: newItemQuantity
+    const newItem = {
+        itemId: state.items.length + 1, // assuming itemId is the next number in the sequence
+        itemName: newItemName,
+        quantity: newItemQuantity,
+        packed: false
     }
+    const newState = { ...state, items: [...state.items, newItem] };
     setState(newState);
-    sendUpdate(newState);
+    sendUpdate(newItem);
   }
 
   return (

@@ -16,7 +16,7 @@ export function ShowListSearchResults({ state, setState }) {
               </tr>
             </thead>
             <tbody>
-              {state.map((template) => {
+              {state.map((template, index) => {
                 return (
                   <tr key={template.id} className="templateBox">
                     <td>{template.title}</td>
@@ -28,6 +28,7 @@ export function ShowListSearchResults({ state, setState }) {
                         </tr>
                       ))}
                     </td>
+                    <td><button type="button" onClick={handleEdit} data-index={index}>Vælg</button></td>
                   </tr>
                 );
               })}
