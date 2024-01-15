@@ -6,6 +6,9 @@ export function Navbar() {
       <NavLink to="/createtemplate" >
         Tilføj skabelon
       </NavLink>
+      <NavLink to="/listtemplates" >
+        Se skabeloner
+      </NavLink>
     </nav>
   );
 }

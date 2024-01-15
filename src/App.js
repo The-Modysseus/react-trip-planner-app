@@ -7,6 +7,7 @@ import {
 import { setBaseUrl } from './Services/api';
 import { PageLayout } from './Components/PageLayout';
 import { CreateTemplate } from './Components/CreateTemplate';
+import { ListTemplates } from './Components/ListTemplates';
 import UnknownPage from './Components/UnknownPage';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PageLayout />} />
         <Route path="/createtemplate" element={<CreateTemplate />} />
+        <Route path="/listtemplates" element={<ListTemplates />} />
         <Route path="*" element={<UnknownPage />} />
       </Routes>
     </Router>
