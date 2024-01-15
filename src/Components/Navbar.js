@@ -9,6 +9,9 @@ export function Navbar() {
       <NavLink to="/listtemplates" >
         Se skabeloner
       </NavLink>
+      <NavLink to="/edittemplate" >
+        Rediger skabelon
+      </NavLink>
     </nav>
   );
 }
