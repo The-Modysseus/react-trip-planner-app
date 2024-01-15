@@ -4,18 +4,18 @@
       "id": 1,
       "title": "Teltferie",
       "items": [
-        { "itemId": 1, "itemName": "Telt", "count": 1, "packed": false },
-        { "itemId": 2, "itemName": "Sovepose", "count": 1, "packed": false },
-        { "itemId": 3, "itemName": "Strømper", "count": 7, "packed": false }
+        { "itemId": 1, "itemName": "Telt", "quantity": 1, "packed": false },
+        { "itemId": 2, "itemName": "Sovepose", "quantity": 1, "packed": false },
+        { "itemId": 3, "itemName": "Strømper", "quantity": 7, "packed": false }
       ]
     },
     {
       "id": 2,
       "title": "Charterferie",
       "items": [
-        { "itemId": 1, "itemName": "Badetøj", "count": 1, "packed": false },
-        { "itemId": 2, "itemName": "Solcreme", "count": 1, "packed": false },
-        { "itemId": 3, "itemName": "T-shirts", "count": 4, "packed": false }
+        { "itemId": 1, "itemName": "Badetøj", "quantity": 1, "packed": false },
+        { "itemId": 2, "itemName": "Solcreme", "quantity": 1, "packed": false },
+        { "itemId": 3, "itemName": "T-shirts", "quantity": 4, "packed": false }
       ]
     }
   ],
@@ -24,19 +24,19 @@
       "id": 1,
       "title": "Camping i Pinsen 22",
       "items": [
-        { "itemId": 1, "itemName": "Telt", "count": 1, "packed": true },
-        { "itemId": 2, "itemName": "Sovepose", "count": 1, "packed": true },
-        { "itemId": 3, "itemName": "Strømper", "count": 7, "packed": true }
+        { "itemId": 1, "itemName": "Telt", "quantity": 1, "packed": true },
+        { "itemId": 2, "itemName": "Sovepose", "quantity": 1, "packed": true },
+        { "itemId": 3, "itemName": "Strømper", "quantity": 7, "packed": true }
       ]
     },
     {
       "id": 2,
       "title": "Mallorca 22",
       "items": [
-        { "itemId": 1, "itemName": "Badetøj", "count": 1, "packed": true },
-        { "itemId": 2, "itemName": "Solcreme", "count": 1, "packed": true },
-        { "itemId": 3, "itemName": "T-shirts", "count": 4, "packed": false },
-        { "itemId": 4, "itemName": "Shorts", "count": 2, "packed": false }
+        { "itemId": 1, "itemName": "Badetøj", "quantity": 1, "packed": true },
+        { "itemId": 2, "itemName": "Solcreme", "quantity": 1, "packed": true },
+        { "itemId": 3, "itemName": "T-shirts", "quantity": 4, "packed": false },
+        { "itemId": 4, "itemName": "Shorts", "quantity": 2, "packed": false }
       ]
     }
   ]
