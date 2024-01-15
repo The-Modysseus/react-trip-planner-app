@@ -9,21 +9,28 @@ export function ShowListSearchResults({ state, setState }) {
     return (
       <div className="ShowListSearchResults">
       <table>
-        <thead>
-        <tr>
-              <th>Navn på skabelon</th>
-              <th>Genstande</th>
-            </tr>
-        </thead>
-        <tbody>
-        {state.map(item => {
-              return (
-                <tr key={item.id}>
-                  <td>{item.title}</td>
-                  <td>{item.items}</td>
-                </tr>
-              );
-            })}
+            <thead>
+              <tr>
+                <th>Navn på skabelon</th>
+                <th>Genstande og antal</th>
+              </tr>
+            </thead>
+            <tbody>
+              {state.map((template) => {
+                return (
+                  <tr key={template.id} className="templateBox">
+                    <td>{template.title}</td>
+                    <td>
+                      {template.items.map((item) => (
+                        <tr key={item.itemId}>
+                          <td>{item.itemName}</td>
+                          <td>{item.quantity}</td>
+                        </tr>
+                      ))}
+                    </td>
+                  </tr>
+                );
+              })}
         </tbody>
       </table>
       </div>
