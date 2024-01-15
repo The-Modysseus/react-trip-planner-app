@@ -28,3 +28,10 @@ table {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.templateBox {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
